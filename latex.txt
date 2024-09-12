@@ -1,0 +1,116 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	//Environments:
+	"problem":{"prefix": "pb","body": ["\\begin{pb}","\t$1","\\end{pb}"]},
+	"align*":{"prefix": "al", "body": ["\\begin{align*}","\t$1","\\end{align*}"]},
+
+	//Equation sub-Environments
+	"set":{"prefix": "se","body": "\\set{$1}"},
+	"absolute value":{"prefix": "ab","body": "\\abs{$1}"},
+	"norm":{"prefix": "no","body": "\\norm{$1}"},
+	"fraction":{"prefix": "frac","body": "\\frac{$1}{$2}"},
+	"derivative":{"prefix": "der","body": "\\frac{d$1}{d$2}"},
+	"derivative w.r.t. x":{"prefix": "derx","body": "\\frac{d$1}{dx}"},
+	"partial":{"prefix": "pder","body": "\\frac{\\del$1}{\\del $2}"},
+	"partial w.r.t. x":{"prefix": "pderx","body": "\\frac{\\del $1}{\\del x}"},
+
+	//Matrices & Vectors
+	"bmatrix":{"prefix": "bmat","body": "\\begin{bmatrix} $1 \\end{bmatrix}"},
+	"pmatrix":{"prefix": "pmat","body": "\\begin{pmatrix} $1 \\end{pmatrix}"},
+	"2x2 bmatrix":{"prefix": "bmat2","body": "\\begin{bmatrix} $1 & $2 \\\\ $3 & $4 \\end{bmatrix}"},
+	"2x2 pmatrix":{"prefix": "pmat2","body": "\\begin{pmatrix} $1 & $2 \\\\ $3 & $4 \\end{pmatrix}"},
+	"3x3 bmatrix":{"prefix": "bmat3","body": "\\begin{bmatrix} $1 & $2 & $3 \\\\ $4 & $5 & $6 \\\\ $7 & $8 & $9 \\end{bmatrix}"},
+	"3x3 pmatrix":{"prefix": "pmat3","body": "\\begin{pmatrix} $1 & $2 & $3 \\\\ $4 & $5 & $6 \\\\ $7 & $8 & $9 \\end{pmatrix}"},
+	"2 vertical bvector":{"prefix": "bvec2","body": "\\begin{bmatrix} $1 \\ $2 \\end{bmatrix}"},
+	"2 horizontal bvector":{"prefix": "hbvec2","body": "\\begin{bmatrix} $1 & $2 \\end{bmatrix}"},
+	"2 vertical pvector":{"prefix": "pvec2","body": "\\begin{pmatrix} $1 \\ $2 \\end{pmatrix}"},
+	"2 horizontal pvector":{"prefix": "hpvec2","body": "\\begin{pmatrix} $1 & $2 \\end{pmatrix}"},
+	"3 vertical bvector":{"prefix": "bvec3","body": "\\begin{bmatrix} $1 \\ $2 \\ $3 \\end{bmatrix}"},
+	"3 horizontal bvector":{"prefix": "hbvec3","body": "\\begin{bmatrix} $1 & $2 & $3 \\end{bmatrix}"},
+	"3 vertical pvector":{"prefix": "pvec3","body": "\\begin{pmatrix} $1 \\ $2 \\ $3\\end{pmatrix}"},
+	"3 horizontal pvector":{"prefix": "hpvec3","body": "\\begin{pmatrix} $1 & $2 & $3\\end{pmatrix}"},
+
+	//Math BlackBoard
+	"Reals":{"prefix": "rr", "body": "\\mathbb{R}"},
+	"Rationals":{"prefix": "qq", "body": "\\mathbb{Q}"},
+	"Integers":{"prefix": "zz", "body": "\\mathbb{Z}"},
+	"Naturals":{"prefix": "nn","body": "\\mathbb{N}"},
+	"Complex":{"prefix": "cc","body": "\\mathbb{C}"},
+	"Projective":{"prefix": "pp","body": "\\mathbb{P}"},
+
+	//Mathcal
+	"mathcal A":{"prefix": "ma","body": "\\mathcal{A}"},
+	"mathcal B":{"prefix": "mb","body": "\\mathcal{B}"},
+	"mathcal C":{"prefix": "mc","body": "\\mathcal{C}"},
+	"mathcal D":{"prefix": "md","body": "\\mathcal{D}"},
+	"mathcal E":{"prefix": "me","body": "\\mathcal{E}"},
+	"mathcal F":{"prefix": "mf","body": "\\mathcal{F}"},
+	"mathcal G":{"prefix": "mg","body": "\\mathcal{G}"},
+	"mathcal H":{"prefix": "mh","body": "\\mathcal{H}"},
+	"mathcal I":{"prefix": "mi","body": "\\mathcal{I}"},
+	"mathcal J":{"prefix": "mj","body": "\\mathcal{J}"},
+	"mathcal K":{"prefix": "mk","body": "\\mathcal{K}"},
+	"mathcal L":{"prefix": "ml","body": "\\mathcal{L}"},
+	"mathcal M":{"prefix": "mm","body": "\\mathcal{M}"},
+	"mathcal N":{"prefix": "mn","body": "\\mathcal{N}"},
+	"mathcal O":{"prefix": "mo","body": "\\mathcal{O}"},
+	"mathcal P":{"prefix": "mp","body": "\\mathcal{P}"},
+	"mathcal Q":{"prefix": "mq","body": "\\mathcal{Q}"},
+	"mathcal R":{"prefix": "mr","body": "\\mathcal{R}"},
+	"mathcal S":{"prefix": "ms","body": "\\mathcal{S}"},
+	"mathcal T":{"prefix": "mt","body": "\\mathcal{T}"},
+	"mathcal U":{"prefix": "mu","body": "\\mathcal{U}"},
+	"mathcal V":{"prefix": "mv","body": "\\mathcal{V}"},
+	"mathcal W":{"prefix": "mw","body": "\\mathcal{W}"},
+	"mathcal X":{"prefix": "mx","body": "\\mathcal{X}"},
+	"mathcal Y":{"prefix": "my","body": "\\mathcal{Y}"},
+	"mathcal Z":{"prefix": "mz","body": "\\mathcal{Z}"},
+
+
+	//Greek letters (lowercase):
+	"alpha":{"prefix": "a", "body": "\\alpha"},
+	"beta":{"prefix": "b", "body": "\\beta"},
+	"gamma":{"prefix": "g", "body": "\\gamma"},
+	"delta":{"prefix": "d", "body": "\\delta"},
+	"zeta":{"prefix": "z", "body": "\\zeta"},
+	"epsilon":{"prefix": "e", "body": "\\epsilon"},
+	"eta":{"prefix": "n", "body": "\\eta"},
+	"theta":{"prefix": "o","body": "\\theta"},
+	"kappa":{"prefix": "k","body": "\\kappa"},
+	"lambda":{"prefix": "l","body": "\\lambda"},
+	"mu":{"prefix": "u","body": "\\mu"},
+	"nu":{"prefix": "v","body": "\\nu"},
+	"pi":{"prefix": "pi","body": "\\pi"},
+	"rho":{"prefix": "r","body": "\\rho"},
+	"sigma":{"prefix": "s","body": "\\sigma"},
+	"tau":{"prefix": "t", "body": "\\tau"},
+	"phi":{"prefix": "p","body": "\\phi"},
+	"varphi":{"prefix": "vp","body": "\\varphi"},
+	"chi":{"prefix": "x","body": "\\chi"},
+	"psi":{"prefix": "y","body": "\\psi"},
+	"omega":{"prefix": "w","body": "\\omega"},
+	"del":{"prefix": "de","body": "\\partial"},
+
+	//Greek letters (uppercase):
+	"Gamma":{"prefix": "G","body": "\\Gamma"},
+	"Delta":{"prefix": "D","body": "\\Delta"},
+	"Lambda":{"prefix": "L","body": "\\Lambda"},
+	"Theta":{"prefix": "O","body": "\\Theta"},
+	"Sigma":{"prefix": "S","body": "\\Sigma"},
+	"Phi":{"prefix": "P","body": "\\Phi"},
+	"Psi":{"prefix": "Y","body": "\\Psi"},
+	"Omega":{"prefix": "W","body": "\\Omega"}	
+}
